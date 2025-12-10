@@ -2,55 +2,55 @@
   "my-music/ambient-electroacoustic": [
     {
       "name": "Ambient Piece",
-      "path": "audio/ambient-electroacustic/Ambient-Piece.wav"
+      "path": "https://pub-8ccc93469bb64db4aff58fd83b517c9d.r2.dev/audio/ambient-electroacustic/Ambient-Piece.wav"
     },
     {
       "name": "HeavenOfLasVegas",
-      "path": "audio/ambient-electroacustic/HeavenOfLasVegas.wav"
+      "path": "https://pub-8ccc93469bb64db4aff58fd83b517c9d.r2.dev/audio/ambient-electroacustic/HeavenOfLasVegas.wav"
     },
     {
       "name": "Kremnitze",
-      "path": "audio/ambient-electroacustic/Kremnitze.wav"
+      "path": "https://pub-8ccc93469bb64db4aff58fd83b517c9d.r2.dev/audio/ambient-electroacustic/Kremnitze.wav"
     },
     {
       "name": "StillMe",
-      "path": "audio/ambient-electroacustic/StillMe.mp3"
+      "path": "https://pub-8ccc93469bb64db4aff58fd83b517c9d.r2.dev/audio/ambient-electroacustic/StillMe.mp3"
     }
   ],
   "my-music/electronic": [
     {
       "name": "Luftkarl   Free Spirit EP   01 A1 Goa Minimlk",
-      "path": "audio/electronic/Luftkarl---Free-Spirit-EP---01-A1-Goa-Minimlk.wav"
+      "path": "https://pub-8ccc93469bb64db4aff58fd83b517c9d.r2.dev/audio/electronic/Luftkarl---Free-Spirit-EP---01-A1-Goa-Minimlk.wav"
     },
     {
       "name": "Luftkarl   Free Spirit EP   02 A2 Tanzmaus",
-      "path": "audio/electronic/Luftkarl---Free-Spirit-EP---02-A2-Tanzmaus.wav"
+      "path": "https://pub-8ccc93469bb64db4aff58fd83b517c9d.r2.dev/audio/electronic/Luftkarl---Free-Spirit-EP---02-A2-Tanzmaus.wav"
     },
     {
       "name": "Luftkarl   Free Spirit EP   03 B1 Manetyvene",
-      "path": "audio/electronic/Luftkarl---Free-Spirit-EP---03-B1-Manetyvene.wav"
+      "path": "https://pub-8ccc93469bb64db4aff58fd83b517c9d.r2.dev/audio/electronic/Luftkarl---Free-Spirit-EP---03-B1-Manetyvene.wav"
     },
     {
       "name": "Luftkarl   Free Spirit EP   04 B2 I Daggrys Kkken",
-      "path": "audio/electronic/Luftkarl---Free-Spirit-EP---04-B2-I-Daggrys-Kkken.wav"
+      "path": "https://pub-8ccc93469bb64db4aff58fd83b517c9d.r2.dev/audio/electronic/Luftkarl---Free-Spirit-EP---04-B2-I-Daggrys-Kkken.wav"
     }
   ],
   "my-music/solo-piano": [
     {
       "name": "RecordingPiano100125",
-      "path": "audio/solo-piano/RecordingPiano100125.wav"
+      "path": "https://pub-8ccc93469bb64db4aff58fd83b517c9d.r2.dev/audio/solo-piano/RecordingPiano100125.wav"
     },
     {
       "name": "RecordingPiano2100125",
-      "path": "audio/solo-piano/RecordingPiano2100125.wav"
+      "path": "https://pub-8ccc93469bb64db4aff58fd83b517c9d.r2.dev/audio/solo-piano/RecordingPiano2100125.wav"
     },
     {
       "name": "RecordingPiano3100125",
-      "path": "audio/solo-piano/RecordingPiano3100125.wav"
+      "path": "https://pub-8ccc93469bb64db4aff58fd83b517c9d.r2.dev/audio/solo-piano/RecordingPiano3100125.wav"
     },
     {
       "name": "RecordingPianoSlow14 01 25",
-      "path": "audio/solo-piano/RecordingPianoSlow14_01_25.wav"
+      "path": "https://pub-8ccc93469bb64db4aff58fd83b517c9d.r2.dev/audio/solo-piano/RecordingPianoSlow14_01_25.wav"
     }
   ]
 }

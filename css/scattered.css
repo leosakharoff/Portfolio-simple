@@ -6,13 +6,13 @@
 }
 
 :root {
-    --bg: #f5e6e0;
-    --text: #333;
-    --interactive: #219ebc;
-    --programming: #023047;
-    --sound: #ffb703;
-    --community: #fb8500;
-    --context: #999;
+    --bg: #fafafa;
+    --text: #2c2416;
+    --interactive: #0369a1;
+    --programming: #15803d;
+    --sound: #6b21a8;
+    --community: #c2410c;
+    --context: #78716c;
     --popup-bg: #fff;
     --shadow: rgba(0, 0, 0, 0.15);
 }
