@@ -1,0 +1,13 @@
+# Media files (hosted on Cloudflare R2)
+images/
+videos/
+audio/
+
+# Cloudflare Wrangler
+.wrangler/
+
+# Python scripts
+*.py
+
+# Shell scripts
+*.sh
