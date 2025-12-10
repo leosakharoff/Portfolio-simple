@@ -24,3 +24,6 @@ dist/
 images/
 videos/
 audio/
+
+# Cloudflare Wrangler
+.wrangler/
