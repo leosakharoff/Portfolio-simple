@@ -1,9 +1,10 @@
-// Simple lightbox for gallery images
+// Simple lightbox for gallery images and videos
 class Lightbox {
     constructor() {
         this.currentIndex = 0;
         this.items = [];
         this.lightboxEl = null;
+        this.isVideoPlaying = false;
         this.init();
     }
 
@@ -15,6 +16,7 @@ class Lightbox {
             <button class="lightbox-close">&times;</button>
             <button class="lightbox-nav lightbox-prev">&lsaquo;</button>
             <button class="lightbox-nav lightbox-next">&rsaquo;</button>
+            <div class="lightbox-dots"></div>
         `;
         document.body.appendChild(this.lightboxEl);
 
@@ -32,6 +34,8 @@ class Lightbox {
                 item.addEventListener('click', () => this.open(index));
             }
         });
+
+        this.renderDots();
 
         // Event listeners
         this.lightboxEl.addEventListener('click', (e) => {
@@ -74,19 +78,60 @@ class Lightbox {
         this.lightboxEl.classList.remove('active');
         document.body.style.overflow = '';
 
-        // Remove current media
+        // Pause and remove current media
         const media = this.lightboxEl.querySelector('img, video');
         if (media && media.parentElement === this.lightboxEl) {
+            if (media.tagName === 'VIDEO') {
+                media.pause();
+            }
             this.lightboxEl.removeChild(media);
         }
+        this.isVideoPlaying = false;
+    }
+
+    renderDots() {
+        const dotsContainer = this.lightboxEl.querySelector('.lightbox-dots');
+        dotsContainer.innerHTML = '';
+
+        if (this.items.length === 0) return;
+
+        this.items.forEach((_, index) => {
+            const dot = document.createElement('button');
+            dot.className = 'lightbox-dot';
+            dot.ariaLabel = `Go to slide ${index + 1}`;
+            dot.addEventListener('click', (e) => {
+                e.stopPropagation();
+                this.currentIndex = index;
+                this.show();
+            });
+            dotsContainer.appendChild(dot);
+        });
+    }
+
+    updateDots() {
+        const dots = this.lightboxEl.querySelectorAll('.lightbox-dot');
+        dots.forEach((dot, index) => {
+            if (index === this.currentIndex) {
+                dot.classList.add('active');
+            } else {
+                dot.classList.remove('active');
+            }
+        });
     }
 
     show() {
-        // Remove existing media
+        this.updateDots();
+
+        // Pause and remove existing media
         const existingMedia = this.lightboxEl.querySelector('img, video');
         if (existingMedia && existingMedia.parentElement === this.lightboxEl) {
+            if (existingMedia.tagName === 'VIDEO') {
+                existingMedia.pause();
+            }
             this.lightboxEl.removeChild(existingMedia);
         }
+
+        this.isVideoPlaying = false;
 
         const item = this.items[this.currentIndex];
         let mediaEl;
@@ -100,6 +145,18 @@ class Lightbox {
             mediaEl.src = item.src;
             mediaEl.controls = true;
             mediaEl.autoplay = true;
+            mediaEl.playsInline = true;
+
+            // Track video play state
+            mediaEl.addEventListener('play', () => {
+                this.isVideoPlaying = true;
+            });
+            mediaEl.addEventListener('pause', () => {
+                this.isVideoPlaying = false;
+            });
+            mediaEl.addEventListener('ended', () => {
+                this.isVideoPlaying = false;
+            });
         }
 
         // Insert before the close button

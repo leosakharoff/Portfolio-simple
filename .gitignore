@@ -19,3 +19,8 @@ Thumbs.db
 dist/
 .vercel
 .netlify
+
+# Media
+images/
+videos/
+audio/

@@ -4,95 +4,524 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Leo Sakharoff — Creative Technologist</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/scattered.css">
 </head>
 <body>
-    <header>
-        <!-- Awkward photo placement -->
-
-        <div class="awkward-photo">
-            <img src="images/leo-photo.jpeg" alt="Leo Sakharoff">
+    <!-- Header with name and CV download -->
+    <header class="site-header">
+        <div class="header-left">
+            <h1 class="site-title">Leo Sakharoff</h1>
+            <span class="site-subtitle">Creative Technologist</span>
         </div>
-
-        <h1>Leo Sakharoff</h1>
-        <h3 class="subtitle">Creative Technologist</h3>
-
         <nav class="header-nav">
-            <a href="index.html" class="nav-button">about me</a>
-            <a href="#projects" class="nav-button">project</a>
+            <a href="CV_LeoSakharoff.pdf" download class="cv-link">Download CV</a>
+            <div class="contact-dropdown">
+                <span class="contact-link">Contact</span>
+                <div class="contact-list">
+                    <a href="tel:+4561675306">+45 61675306</a>
+                    <a href="mailto:leo.sakharoff@gmail.com">leo.sakharoff@gmail.com</a>
+                </div>
+            </div>
         </nav>
     </header>
 
-    <section class="intro">
-        <p>My journey into programming actually began in the world of jazz. There, I learned to think creatively and navigate the abstract—skills I use today when building interactive installations and working with sound and code.</p>
+    <!-- Scattered projects container -->
+    <main class="scattered-container">
 
-        <p>After doing my bachelor at Sonic College and working a few years as a sound designer for visual media and composing music, I constantly felt the urge to explore the more technical side of things. So I applied for the master's program at ITU—an intensive learning curve in software development that's been a great experience. Now I'm looking for a place where I can combine both worlds: technical curiosity, close collaboration, and building experiences that connect people with space, sound, and technology.</p>
-    </section>
-
-    <section class="projects">
-        <h2>PROJECTS</h2>
-
-        <div class="project-item">
-            <a href="projects/sound-of-chess.html">
-                <span class="project-number">01</span>
-                <span class="project-title">Sound of Chess</span>
-                <span class="project-category">— Interactive</span>
-                <div class="project-description">
-                    Sound of Chess explores the intersection of sound and chess through interactive design and generative music. Built with Bela and Pure Data, it uses electrical circuit design and voltage dividers to identify chess pieces, transforming their movements into real-time, evolving soundscapes.
-                </div>
-            </a>
+        <!-- Project: Sound of Chess -->
+        <div class="project-word"
+             data-category="interactive"
+             style="top: 15%; left: 8%;"
+             data-title="Sound of Chess"
+             data-description="An interactive installation transforming chess into a generative musical experience. Each move triggers evolving soundscapes, creating a unique composition every game. Inspired by Philip Tagg, Brian Eno, and Alan Dorin, the system blends strategic play with dynamic sound design. Made in collaboration with Tristan Wielemann."
+             data-tech="Bela, Pure Data, C++, Voltage Dividers, Circuit Design"
+             data-year="2024"
+             data-link="projects/sound-of-chess.html"
+             data-pdf="pdfs/sound-of-chess/sound-of-chess-ba-thesis.pdf"
+             data-media="videos/projects/sound-of-chess/sound-of-chess-promo.mp4"
+             data-project-id="sound-of-chess">
+            Sound of Chess
         </div>
 
-        <div class="project-item">
-            <a href="projects/spring-radio.html">
-                <span class="project-number">02</span>
-                <span class="project-title">Spring Radio</span>
-                <span class="project-category">— Programming</span>
-                <div class="project-description">
-                    A community-driven radio project built with local artists and friends. Features a livestream platform with scheduling, cloud storage, and LibreTime integration. A space for collaboration, creativity, and shared soundscapes.
-                </div>
-            </a>
+        <!-- Project: Spring Radio -->
+        <div class="project-word"
+             data-category="programming"
+             style="top: 35%; left: 55%;"
+             data-title="Spring Radio"
+             data-description="A community radio project created with local artists and friends. Built with React, Node.js, and Google Cloud Services, the platform supports livestream scheduling, cloud-based file management, and real-time updates. A deep dive into web development, API integration, and community-driven software design."
+             data-tech="React, Node.js, Express, Google Cloud Storage, Firebase"
+             data-year="2023"
+             data-link="projects/spring-radio.html"
+             data-media="videos/projects/spring-radio/spring-radio-web.mp4"
+             data-github="https://github.com/Spring-Forening/spring-radio"
+             data-project-id="spring-radio">
+            Spring Radio
         </div>
 
-        <div class="project-item">
-            <a href="projects/semantic-portal.html">
-                <span class="project-number">03</span>
-                <span class="project-title">Semantic Portal</span>
-                <span class="project-category">— Programming</span>
-                <div class="project-description">
-                    Software development and system integration at Semantic ApS. Backend development, APIs, and cloud infrastructure. Building scalable solutions for logistics and business communication with Azure, .NET, and event-driven architectures.
-                </div>
-            </a>
+        <!-- Project: ONTO Stories -->
+        <div class="project-word"
+             data-category="programming"
+             style="top: 70%; left: 65%;"
+             data-title="ONTO Stories"
+             data-description="A film portfolio website for Danish production company ONTO. Built with React and Motion, featuring animated landing sequences and video playback that adapts between desktop overlay and mobile fullscreen. Videos served from Cloudflare R2 with prefetching for near-instant playback."
+             data-tech="React, TypeScript, Tailwind, Motion, Cloudflare R2, Vite"
+             data-year="2024"
+             data-link="https://onto-stories.com"
+             data-project-id="onto-stories">
+            ONTO Stories
         </div>
 
-        <div class="project-item">
-            <a href="projects/vertigo-installations.html">
-                <span class="project-number">04</span>
-                <span class="project-title">Vertigo Installations</span>
-                <span class="project-category">— Interactive</span>
-                <div class="project-description">
-                    Interactive artworks built during internship at Vertigo. Raspberry Pi, microcontrollers, TouchDesigner. Custom LED fixtures and lighting systems for art installations.
-                </div>
-            </a>
+        <!-- Project: Semantic Portal & API -->
+        <div class="project-word"
+             data-category="programming"
+             style="top: 60%; left: 20%;"
+             data-title="Semantic Portal & API"
+             data-description="At Semantic, I contribute to backend systems, APIs, and cloud solutions for logistics and document exchange. My work involves .NET, C#, and Azure services (Functions, Event Grid, SQL), integrating Peppol and UBL standards. I also develop automation tools and Jira integrations, gaining hands-on experience with enterprise software and event-driven systems."
+             data-tech=".NET, C#, Azure Functions, Event Grid, Azure SQL, Peppol, UBL"
+             data-year="2023-2024"
+             data-link="projects/semantic-portal.html"
+             data-media="images/projects/semantic/semantic-1.png"
+             data-project-id="semantic">
+            Semantic Portal & API
         </div>
 
-        <div class="project-item">
-            <a href="projects/no-latency.html">
-                <span class="project-number">05</span>
-                <span class="project-title">No Latency</span>
-                <span class="project-category">— Sound Design</span>
-                <div class="project-description">
-                    Seven years of sound design and music for films, visual media, and commercial clients including Adidas. Spatial audio, real-time processing, generative systems.
-                </div>
-            </a>
-        </div>
-    </section>
+        <!-- Umbrella Project: Vertigo -->
+        <div class="project-word umbrella-project"
+             data-category="interactive"
+             style="top: 25%; left: 70%;"
+             data-title="Vertigo"
+             data-description="Five months as an intern at Vertigo, an audiovisual artist collective in Copenhagen. Learned about custom LED systems, electronics, and how to build installations from idea to finished product."
+             data-tech="Max4Live, MadMapper, TouchDesigner, LED Systems, Soldering"
+             data-year="2022"
+             data-umbrella="true"
+             data-project-id="vertigo">
+            Vertigo
 
-    <section class="contact">
-        <h2>CONTACT</h2>
-        <a href="mailto:leo.sakharoff@gmail.com">leo.sakharoff@gmail.com</a>
-        <a href="https://linkedin.com/in/leo-sakharoff-086497225" target="_blank">LinkedIn</a>
-        <a href="CV_LeoSakharoff.pdf" download>Download CV</a>
-    </section>
+            <!-- Sub-projects (hidden, expand in circle on click) -->
+            <div class="sub-projects">
+                <div class="sub-project"
+                     data-category="interactive"
+                     data-title="Sivas at the Opera"
+                     data-description="A large scenography for Sivas' concert at the Copenhagen Opera. Went from SketchUp designs and cardboard prototypes to an 8x10 meter stage setup with projections."
+                     data-tech="SketchUp, Projectors, MadMapper"
+                     data-year="2022"
+                     data-project-id="vertigo/sivas-opera">
+                    Sivas at the Opera
+                </div>
+                <div class="sub-project"
+                     data-category="interactive"
+                     data-title="Shiro"
+                     data-description="An interactive light installation for Ringkøbing Light Festival. 48 LED cylinders forming a fairy ring in the forest, inspired by mycelium networks. I built the Max4Live patch for the radar sensors that made it react to visitors."
+                     data-tech="48 LED Cylinders, Radar Sensors, Max4Live, DMX"
+                     data-year="2022"
+                     data-project-id="vertigo/shiro">
+                    Shiro
+                </div>
+                <div class="sub-project"
+                     data-category="interactive"
+                     data-title="Refrakto"
+                     data-description="Audiovisual church concerts by Vertigo in collaboration with Den Sorte Skole. A mix of custom LED fixtures, projections, and the duo's sample-based music in sacred spaces."
+                     data-tech="LED Fixtures, Projectors, MadMapper"
+                     data-year="2022"
+                     data-project-id="vertigo/refrakto">
+                    Refrakto
+                </div>
+            </div>
+        </div>
+
+        <!-- Umbrella Project: In the Studio -->
+        <div class="project-word umbrella-project"
+             data-category="community"
+             style="top: 45%; left: 40%;"
+             data-title="In the Studio"
+             data-description="A workshop and event series held across Copenhagen, bringing together artists, musicians, and creatives to share knowledge and connect. A deep dive into community-building and underground event organization. Featured artists: Lorenzo Senni, Smerz, Makiko Hirabayashi, Molina, Puyain Sanati, and many more."
+             data-tech="Event Coordination, Funding, Web Signups, Stripe"
+             data-year="2023"
+             data-umbrella="true"
+             data-project-id="in-the-studio">
+            In the Studio
+
+            <!-- Sub-projects (hidden, expand in circle on click) -->
+            <div class="sub-projects">
+                <div class="sub-project"
+                     data-category="community"
+                     data-title="Smerz"
+                     data-description="A workshop with Norwegian duo Smerz, exploring their creative process and musical approach. The first event in the In the Studio series."
+                     data-tech="Workshop, Live Event"
+                     data-year="09/02/2024"
+                     data-media="images/projects/in-the-studio/smerz/smerz-1.jpeg"
+                     data-project-id="in-the-studio/smerz">
+                    Smerz
+                </div>
+                <div class="sub-project"
+                     data-category="community"
+                     data-title="Lorenzo Senni"
+                     data-description="A workshop with Italian artist Lorenzo Senni, exploring his approach to trance, avant-garde, and classical composition. He brought a synth."
+                     data-tech="Workshop, Live Event"
+                     data-year="07/03/2024"
+                     data-media="images/projects/in-the-studio/lorenzo-senni/lorenzo-senni-1.jpeg"
+                     data-project-id="in-the-studio/lorenzo-senni">
+                    Lorenzo Senni
+                </div>
+                <div class="sub-project"
+                     data-category="community"
+                     data-title="Tettix Hexer"
+                     data-description="A workshop with Danish sound artist Tettix Hexer, exploring biometric sound processing and his blend of cosmic jazz, devotional music, and shoegaze."
+                     data-tech="Workshop, Live Event"
+                     data-year="22/10/2024"
+                     data-media="images/projects/in-the-studio/tettix-hexer/tettix-hexer-1.jpeg"
+                     data-project-id="in-the-studio/tettix-hexer">
+                    Tettix Hexer
+                </div>
+                <div class="sub-project"
+                     data-category="community"
+                     data-title="Fergus Jones"
+                     data-description="A workshop with Scottish DJ and producer Fergus Jones, exploring the history and genealogy of experimental electronic music."
+                     data-tech="Workshop, Live Event"
+                     data-year="05/11/2024"
+                     data-media="images/projects/in-the-studio/fergus-jones/fergus-jones-1.jpeg"
+                     data-project-id="in-the-studio/fergus-jones">
+                    Fergus Jones
+                </div>
+                <div class="sub-project"
+                     data-category="community"
+                     data-title="Puyain Sanati"
+                     data-description="A workshop with Danish-Iranian composer Puyain Sanati, exploring electroacoustic composition and blending electronic processing with acoustic sources."
+                     data-tech="Workshop, Live Event"
+                     data-year="14/11/2024"
+                     data-media="images/projects/in-the-studio/puyain-sanati/puyain-sanati-1.jpeg"
+                     data-project-id="in-the-studio/puyain-sanati">
+                    Puyain Sanati
+                </div>
+                <div class="sub-project"
+                     data-category="community"
+                     data-title="Jakob Folke & Jonas Torstensen"
+                     data-description="A workshop with Jakob Folke and Jonas Torstensen, founders of labels Kaos Og Stjernen and Kornmod. The session explored ambient music and releasing on tape and vinyl."
+                     data-tech="Workshop, Live Event"
+                     data-year="03/12/2024"
+                     data-media="images/projects/in-the-studio/jakob-jonas/jakob-jonas-1.jpg"
+                     data-project-id="in-the-studio/jakob-jonas">
+                    Jakob & Jonas
+                </div>
+                <div class="sub-project"
+                     data-category="community"
+                     data-title="Christian Rohde"
+                     data-description="A workshop with Danish musician and producer Christian Rohde, sharing his songwriting process and work on his debut album."
+                     data-tech="Workshop, Live Event"
+                     data-year="10/12/2024"
+                     data-media="images/projects/in-the-studio/christian-rohde/christian-rohde-1.jpg"
+                     data-project-id="in-the-studio/christian-rohde">
+                    Christian Rohde
+                </div>
+                <div class="sub-project"
+                     data-category="community"
+                     data-title="Makiko Hirabayashi"
+                     data-description="A workshop with Japanese pianist and composer Makiko Hirabayashi, exploring jazz improvisation and harmonic composition."
+                     data-tech="Workshop, Live Event"
+                     data-year="12/12/2024"
+                     data-media="images/projects/in-the-studio/makiko-hirabayashi/makiko-hirabayashi-1.jpeg"
+                     data-project-id="in-the-studio/makiko-hirabayashi">
+                    Makiko Hirabayashi
+                </div>
+                <div class="sub-project"
+                     data-category="community"
+                     data-title="Lil Lacy"
+                     data-description="A workshop with singer and cellist Lil Lacy, exploring her use of effect pedals, improvisation, and composition."
+                     data-tech="Workshop, Live Event"
+                     data-year="13/12/2024"
+                     data-media="images/projects/in-the-studio/lil-lacy/lil-lacy-1.jpeg"
+                     data-project-id="in-the-studio/lil-lacy">
+                    Lil Lacy
+                </div>
+                <div class="sub-project"
+                     data-category="community"
+                     data-title="Molina"
+                     data-description="A workshop with Rebecca Molina, exploring the SPD sampler as a compositional tool and her approach to creating textured soundscapes."
+                     data-tech="Workshop, Live Event"
+                     data-year="19/12/2024"
+                     data-media="images/projects/in-the-studio/molina/molina-1.jpg"
+                     data-project-id="in-the-studio/molina">
+                    Molina
+                </div>
+            </div>
+        </div>
+
+        <!-- Project: Ny Lille Klub -->
+        <div class="project-word"
+             data-category="community"
+             style="top: 80%; left: 35%;"
+             data-title="Ny Lille Klub"
+             data-description="A volunteer-driven underground community where I shaped organization, infrastructure, and digital tools. Built a website with ticketing, event calendar, and membership signup. Set up Slack, Google Workspace, and a bar payment system with inventory management. An invaluable experience in self-organization and community-building. Currently searching for a new location—hit me up if you know a space!"
+             data-tech="Next.js, Stripe, Firebase, Slack, Google Workspace, Notion"
+             data-year="2023-2024"
+             data-link="projects/ny-lille-klub.html"
+             data-media="images/projects/ny-lille-klub/ny-lille-klub-1.jpg"
+             data-project-id="ny-lille-klub"
+             data-instagram="https://www.instagram.com/ny.lille.klub/">
+            Ny Lille Klub
+        </div>
+
+        <!-- Project: Bunkergiorno -->
+        <div class="project-word"
+             data-category="community"
+             style="top: 72%; left: 55%;"
+             data-title="Bunkergiorno"
+             data-description="Our music community at Østervoldgade 38A in two neighbouring bunkers. One is a recording studio with a nice piano and quality equipment for creating acoustic and electronic music. The other bunker is for events, DJ sets, workshops, and creative gatherings. In the bunkers we strive to engage with the local community and share good vibes with our friends and Copenhagen's underground music scene. Only good vibes!"
+             data-tech="Recording Studio, Events, Workshops, Community"
+             data-year="2024-2025"
+             data-media="images/projects/bunkergiorno/bunkergiorno-1.jpg"
+             data-project-id="bunkergiorno"
+             data-instagram="https://www.instagram.com/bunkergiorno/">
+            Bunkergiorno
+        </div>
+
+        <!-- Umbrella Project: No Latency -->
+        <div class="project-word umbrella-project"
+             data-category="sound"
+             style="top: 60%; left: 70%;"
+             data-title="No Latency"
+             data-description="Years of freelance sound design and composition for commercials, branded content, and short films. This chapter refined my skills in speed, adaptability, and technical precision—but also pushed me towards interactive sound, generative composition, and creative technology. These experiences shaped how I think about sound, space, and storytelling."
+             data-tech="Ableton Live, Pro Tools, Reaper, Kontakt, Izotope RX"
+             data-year="2017-2024"
+             data-umbrella="true"
+             data-project-id="no-latency">
+            No Latency
+
+            <!-- Sub-projects (hidden, expand in circle on click) -->
+            <div class="sub-projects">
+                <div class="sub-project"
+                     data-category="sound"
+                     data-title="Adidas"
+                     data-description="Music composition and sound design for Adidas commercial featuring Abdi."
+                     data-tech="Ableton Live, Sound Design, Mixing"
+                     data-year="2020"
+                     data-media="videos/projects/no-latency/adidas/adidas-abdi.mp4"
+                     data-project-id="no-latency/adidas">
+                    Adidas
+                </div>
+                <div class="sub-project"
+                     data-category="sound"
+                     data-title="Illum"
+                     data-description="Music composition and sound design for Illum department store campaign."
+                     data-tech="Ableton Live, Sound Design, Mixing"
+                     data-year="2021"
+                     data-media="videos/projects/no-latency/illum/illum.mp4"
+                     data-project-id="no-latency/illum">
+                    Illum
+                </div>
+                <div class="sub-project"
+                     data-category="sound"
+                     data-title="Rådet for Sikker Trafik"
+                     data-description="Music composition and sound design for Danish Road Safety Council awareness campaign."
+                     data-tech="Ableton Live, Sound Design, Mixing"
+                     data-year="2021"
+                     data-media="videos/projects/no-latency/rådet-for-sikker-trafik/radet-for-sikker-trafik.mp4"
+                     data-project-id="no-latency/radet-for-sikker-trafik">
+                    Rådet for Sikker Trafik
+                </div>
+                <div class="sub-project"
+                     data-category="sound"
+                     data-title="Selected Homme"
+                     data-description="Music composition for Selected Homme fashion brand campaign."
+                     data-tech="Ableton Live, Composition"
+                     data-year="2020"
+                     data-media="videos/projects/no-latency/selected/selected-homme.mp4"
+                     data-project-id="no-latency/selected">
+                    Selected
+                </div>
+                <div class="sub-project"
+                     data-category="sound"
+                     data-title="Shaping New Tomorrow"
+                     data-description="Sound design for Shaping New Tomorrow sustainable fashion brand."
+                     data-tech="Sound Design, Foley, Mixing"
+                     data-year="2022"
+                     data-media="videos/projects/no-latency/shaping-new-tomorrow/shaping-new-tomorrow.mp4"
+                     data-project-id="no-latency/shaping-new-tomorrow">
+                    Shaping New Tomorrow
+                </div>
+                <div class="sub-project"
+                     data-category="sound"
+                     data-title="Velux"
+                     data-description="Music composition and sound design for Velux windows commercial."
+                     data-tech="Ableton Live, Sound Design, Mixing"
+                     data-year="2021"
+                     data-media="videos/projects/no-latency/velux/velux.mp4"
+                     data-project-id="no-latency/velux">
+                    Velux
+                </div>
+            </div>
+        </div>
+
+        <!-- Umbrella Project: My Music -->
+        <div class="project-word umbrella-project"
+             data-category="sound"
+             style="top: 35%; left: 18%;"
+             data-title="My Music"
+             data-description="I grew up surrounded by music, learning piano before venturing into electronic and experimental sounds. Under the name Luftkarl, I've released tracks exploring everything from ambient to dance music—always driven by curiosity rather than genre. Music remains a space to explore ideas freely."
+             data-tech="Ableton Live, Max/MSP, Modular Synthesis, Piano, Field Recording, Hardware Synths"
+             data-year="Ongoing"
+             data-umbrella="true"
+             data-project-id="my-music">
+            My Music
+
+            <!-- Sub-projects (hidden, expand in circle on click) -->
+            <div class="sub-projects">
+                <div class="sub-project"
+                     data-category="sound"
+                     data-title="Solo Piano"
+                     data-description="Piano compositions ranging from improvised pieces to structured works. An exploration of melody, harmony, and the acoustic qualities of the instrument I grew up with."
+                     data-tech="Piano, Acoustic Recording, Mixing"
+                     data-year="Ongoing"
+                     data-project-id="my-music/solo-piano">
+                    Solo Piano
+                </div>
+                <div class="sub-project"
+                     data-category="sound"
+                     data-title="Electronic"
+                     data-description="Dance-oriented and rhythmic electronic productions released under the name Luftkarl. Synthesizers, drum machines, and digital production exploring club sounds and beyond."
+                     data-tech="Ableton Live, Hardware Synths, Modular Synthesis"
+                     data-year="Ongoing"
+                     data-project-id="my-music/electronic">
+                    Electronic
+                </div>
+                <div class="sub-project"
+                     data-category="sound"
+                     data-title="Ambient / Electroacoustic"
+                     data-description="Textural and atmospheric works blending field recordings, synthesis, and acoustic sources. Algorithmic composition and generative processes meet organic sound design."
+                     data-tech="Max/MSP, Field Recording, Algorithmic Composition, Sound Design"
+                     data-year="Ongoing"
+                     data-project-id="my-music/ambient-electroacoustic">
+                    Ambient / Electroacoustic
+                </div>
+            </div>
+        </div>
+
+        <!-- Project: Sirens -->
+        <div class="project-word"
+             data-category="interactive"
+             style="top: 75%; left: 45%;"
+             data-title="Sirens"
+             data-description="A small experimental game I created in Unity, designing both soundscape and music. An exploration of interactive sound in real-time game engines that opened up new perspectives on game audio design."
+             data-tech="Unity, C#, FMOD, Real-Time Audio Processing, Game Audio Implementation, Procedural Sound Design"
+             data-year="2021"
+             data-media="videos/projects/sirens/sirens-gameplay-1.mp4"
+             data-project-id="sirens">
+            Sirens
+        </div>
+
+        <!-- Additional decorative/context words scattered around -->
+        <div class="context-word" style="top: 8%; left: 45%; font-size: 11px;">interactive design</div>
+        <div class="context-word" style="top: 45%; left: 5%; font-size: 10px;">generative music</div>
+        <div class="context-word" style="top: 50%; left: 75%; font-size: 12px;">sound design</div>
+        <div class="context-word" style="top: 85%; left: 25%; font-size: 10px;">installations</div>
+        <div class="context-word" style="top: 18%; left: 35%; font-size: 11px;">bela</div>
+        <div class="context-word" style="top: 68%; left: 45%; font-size: 10px;">pure data</div>
+        <div class="context-word" style="top: 30%; left: 15%; font-size: 9px;">raspberry pi</div>
+        <div class="context-word" style="top: 55%; left: 85%; font-size: 11px;">azure</div>
+        <div class="context-word" style="top: 40%; left: 35%; font-size: 10px;">touchdesigner</div>
+        <div class="context-word" style="top: 90%; left: 70%; font-size: 9px;">spatial audio</div>
+        <div class="context-word" style="top: 12%; left: 80%; font-size: 10px;">livestream</div>
+        <div class="context-word" style="top: 78%; left: 10%; font-size: 11px;">.net</div>
+        <div class="context-word" style="top: 22%; left: 50%; font-size: 9px;">microcontrollers</div>
+        <div class="context-word" style="top: 65%; left: 70%; font-size: 10px;">led systems</div>
+        <div class="context-word" style="top: 82%; left: 58%; font-size: 10px;">unity</div>
+        <div class="context-word" style="top: 70%; left: 30%; font-size: 9px;">game audio</div>
+
+    </main>
+
+    <!-- Hover popup modal -->
+    <div class="project-popup" id="projectPopup">
+        <div class="popup-content">
+            <div class="popup-media">
+                <img src="" alt="" id="popupImage">
+                <video id="popupVideo" controls playsinline style="display: none;"></video>
+                <div class="gallery-nav-area gallery-nav-prev" id="galleryPrev">
+                    <span class="gallery-arrow">‹</span>
+                </div>
+                <div class="gallery-nav-area gallery-nav-next" id="galleryNext">
+                    <span class="gallery-arrow">›</span>
+                </div>
+                <div class="popup-dots" id="popupDots"></div>
+            </div>
+            <div class="popup-info">
+                <h2 class="popup-title" id="popupTitle"></h2>
+                <p class="popup-description" id="popupDescription"></p>
+                <div class="popup-meta">
+                    <span class="popup-tech" id="popupTech"></span>
+                    <span class="popup-year" id="popupYear"></span>
+                </div>
+
+                <div class="popup-links" id="popupLinks"></div>
+
+                <!-- Audio Player -->
+                <div class="audio-player" id="audioPlayer" style="display: none;">
+                    <div class="audio-track-list" id="audioTrackList"></div>
+                    <div class="audio-controls">
+                        <button class="audio-btn" id="audioPrev" title="Previous">⏮</button>
+                        <button class="audio-btn audio-play-btn" id="audioPlayPause" title="Play">▶</button>
+                        <button class="audio-btn" id="audioNext" title="Next">⏭</button>
+                    </div>
+                    <div class="audio-progress-container">
+                        <span class="audio-time" id="audioCurrentTime">0:00</span>
+                        <div class="audio-progress" id="audioProgress">
+                            <div class="audio-progress-bar" id="audioProgressBar"></div>
+                        </div>
+                        <span class="audio-time" id="audioDuration">0:00</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Global Audio Element (persists across navigation) -->
+    <audio id="audioElement"></audio>
+
+    <!-- Global Mini Audio Player (bottom right) -->
+    <div class="mini-audio-player" id="miniAudioPlayer">
+        <div class="mini-audio-info">
+            <span class="mini-audio-track" id="miniAudioTrack">No track</span>
+        </div>
+        <div class="mini-audio-controls">
+            <button class="mini-audio-btn" id="miniAudioPrev" title="Previous">⏮</button>
+            <button class="mini-audio-btn mini-audio-play-btn" id="miniAudioPlayPause" title="Play">▶</button>
+            <button class="mini-audio-btn" id="miniAudioNext" title="Next">⏭</button>
+        </div>
+        <div class="mini-audio-progress" id="miniAudioProgress">
+            <div class="mini-audio-progress-bar" id="miniAudioProgressBar"></div>
+        </div>
+        <button class="mini-audio-close" id="miniAudioClose" title="Close player">×</button>
+    </div>
+
+    <!-- Category legend -->
+    <div class="category-legend">
+        <div class="legend-item" data-filter="interactive">
+            <span class="legend-dot interactive"></span>
+            <span>Interactive</span>
+        </div>
+        <div class="legend-item" data-filter="programming">
+            <span class="legend-dot programming"></span>
+            <span>Programming</span>
+        </div>
+        <div class="legend-item" data-filter="sound">
+            <span class="legend-dot sound"></span>
+            <span>Sound</span>
+        </div>
+        <div class="legend-item" data-filter="community">
+            <span class="legend-dot community"></span>
+            <span>Community</span>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="footer-links">
+            <a href="https://linkedin.com/in/leo-sakharoff-086497225" target="_blank">LinkedIn</a>
+            <a href="https://github.com/leosakharov" target="_blank">GitHub</a>
+            <a href="https://www.instagram.com/leosakharoff/" target="_blank">Instagram</a>
+        </div>
+    </footer>
+
+    <script src="js/scattered.js"></script>
 </body>
 </html>
