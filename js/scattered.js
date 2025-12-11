@@ -133,8 +133,11 @@ document.addEventListener('DOMContentLoaded', () => {
         if (isVideoFile(mediaPath)) {
             // Show video, hide image
             popupVideo.src = mediaPath;
+            popupVideo.muted = true;
             popupVideo.style.display = 'block';
             popupImage.style.display = 'none';
+            // Autoplay muted
+            popupVideo.play().catch(err => console.log('Autoplay prevented:', err));
         } else {
             // Show image, hide video
             popupVideo.pause();
@@ -163,6 +166,13 @@ document.addEventListener('DOMContentLoaded', () => {
             clearInterval(galleryInterval);
             galleryInterval = null;
         }
+
+        // Clear previous media immediately to prevent flash
+        popupImage.style.display = 'none';
+        popupImage.src = '';
+        popupVideo.style.display = 'none';
+        popupVideo.pause();
+        popupVideo.src = '';
 
         const title = element.dataset.title;
         const description = element.dataset.description;

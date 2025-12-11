@@ -1,56 +1,56 @@
 {
-  "my-music/ambient-electroacoustic": [
-    {
-      "name": "Ambient Piece",
-      "path": "https://pub-8ccc93469bb64db4aff58fd83b517c9d.r2.dev/audio/ambient-electroacustic/Ambient-Piece.wav"
-    },
-    {
-      "name": "HeavenOfLasVegas",
-      "path": "https://pub-8ccc93469bb64db4aff58fd83b517c9d.r2.dev/audio/ambient-electroacustic/HeavenOfLasVegas.wav"
-    },
-    {
-      "name": "Kremnitze",
-      "path": "https://pub-8ccc93469bb64db4aff58fd83b517c9d.r2.dev/audio/ambient-electroacustic/Kremnitze.wav"
-    },
-    {
-      "name": "StillMe",
-      "path": "https://pub-8ccc93469bb64db4aff58fd83b517c9d.r2.dev/audio/ambient-electroacustic/StillMe.mp3"
-    }
-  ],
   "my-music/electronic": [
     {
       "name": "Luftkarl   Free Spirit EP   01 A1 Goa Minimlk",
-      "path": "https://pub-8ccc93469bb64db4aff58fd83b517c9d.r2.dev/audio/electronic/Luftkarl---Free-Spirit-EP---01-A1-Goa-Minimlk.wav"
+      "path": "https://media.leosakharoff.com/audio/electronic/Luftkarl---Free-Spirit-EP---01-A1-Goa-Minimlk.wav"
     },
     {
       "name": "Luftkarl   Free Spirit EP   02 A2 Tanzmaus",
-      "path": "https://pub-8ccc93469bb64db4aff58fd83b517c9d.r2.dev/audio/electronic/Luftkarl---Free-Spirit-EP---02-A2-Tanzmaus.wav"
+      "path": "https://media.leosakharoff.com/audio/electronic/Luftkarl---Free-Spirit-EP---02-A2-Tanzmaus.wav"
     },
     {
       "name": "Luftkarl   Free Spirit EP   03 B1 Manetyvene",
-      "path": "https://pub-8ccc93469bb64db4aff58fd83b517c9d.r2.dev/audio/electronic/Luftkarl---Free-Spirit-EP---03-B1-Manetyvene.wav"
+      "path": "https://media.leosakharoff.com/audio/electronic/Luftkarl---Free-Spirit-EP---03-B1-Manetyvene.wav"
     },
     {
       "name": "Luftkarl   Free Spirit EP   04 B2 I Daggrys Kkken",
-      "path": "https://pub-8ccc93469bb64db4aff58fd83b517c9d.r2.dev/audio/electronic/Luftkarl---Free-Spirit-EP---04-B2-I-Daggrys-Kkken.wav"
+      "path": "https://media.leosakharoff.com/audio/electronic/Luftkarl---Free-Spirit-EP---04-B2-I-Daggrys-Kkken.wav"
     }
   ],
   "my-music/solo-piano": [
     {
       "name": "RecordingPiano100125",
-      "path": "https://pub-8ccc93469bb64db4aff58fd83b517c9d.r2.dev/audio/solo-piano/RecordingPiano100125.wav"
+      "path": "https://media.leosakharoff.com/audio/solo-piano/RecordingPiano100125.wav"
     },
     {
       "name": "RecordingPiano2100125",
-      "path": "https://pub-8ccc93469bb64db4aff58fd83b517c9d.r2.dev/audio/solo-piano/RecordingPiano2100125.wav"
+      "path": "https://media.leosakharoff.com/audio/solo-piano/RecordingPiano2100125.wav"
     },
     {
       "name": "RecordingPiano3100125",
-      "path": "https://pub-8ccc93469bb64db4aff58fd83b517c9d.r2.dev/audio/solo-piano/RecordingPiano3100125.wav"
+      "path": "https://media.leosakharoff.com/audio/solo-piano/RecordingPiano3100125.wav"
     },
     {
       "name": "RecordingPianoSlow14 01 25",
-      "path": "https://pub-8ccc93469bb64db4aff58fd83b517c9d.r2.dev/audio/solo-piano/RecordingPianoSlow14_01_25.wav"
+      "path": "https://media.leosakharoff.com/audio/solo-piano/RecordingPianoSlow14_01_25.wav"
+    }
+  ],
+  "my-music/ambient-electroacoustic": [
+    {
+      "name": "Ambient Piece",
+      "path": "https://media.leosakharoff.com/audio/ambient-electroacustic/Ambient-Piece.wav"
+    },
+    {
+      "name": "HeavenOfLasVegas",
+      "path": "https://media.leosakharoff.com/audio/ambient-electroacustic/HeavenOfLasVegas.wav"
+    },
+    {
+      "name": "Kremnitze",
+      "path": "https://media.leosakharoff.com/audio/ambient-electroacustic/Kremnitze.wav"
+    },
+    {
+      "name": "StillMe",
+      "path": "https://media.leosakharoff.com/audio/ambient-electroacustic/StillMe.mp3"
     }
   ]
 }

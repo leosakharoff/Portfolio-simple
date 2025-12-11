@@ -147,6 +147,11 @@ class Lightbox {
             mediaEl.autoplay = true;
             mediaEl.playsInline = true;
 
+            // Prevent clicks on video from closing lightbox
+            mediaEl.addEventListener('click', (e) => {
+                e.stopPropagation();
+            });
+
             // Track video play state
             mediaEl.addEventListener('play', () => {
                 this.isVideoPlaying = true;
